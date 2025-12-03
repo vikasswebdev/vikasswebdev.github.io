@@ -1,108 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>View My Work</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/main.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Vikas Patel</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="nav-link">me</a>
+                <a href="about.html" class="nav-link">about</a>
+                <a href="work.html" class="nav-link active">work</a>
+                <a href="contect.html" class="nav-link">contact</a>
+            </div>
+        </nav>
+    </header>
 
-    </head>
-    <body>
-       <header>
-           <div class="menu-btn">
-               <div class="btn-line"></div>
-               <div class="btn-line"></div>
-               <div class="btn-line"></div>
-           </div>
-           <nav class="menu">
-               <div class="menu-branding">
-                   <div class="portrait">
-                   </div>
-               </div>
-               <ul class="menu-nav">
-                   <li class="nav-item">
-                     <a href="index.html" class="nav-link">Home</a>
-                   </li>
-                    <li class="nav-item">
-                     <a href="about.html" class="nav-link">About me</a>
-                   </li>
-                    <li class="nav-item current">
-                     <a href="work.html" class="nav-link">mywork</a>
-                   </li>
-                    <li class="nav-item">
-                     <a href="contect.html" class="nav-link">How to reach me</a>
-                   </li>
-               </ul>
-           </nav>
-       </header>
-       <main id="work">
-           <h1 class="lg-heading">My <span class="text-secondary"> Work</span></h1>
-           <h2 class="sm-heading">
-           Check out some of my projects...
-           </h2>
-           <div class="projects">
-               <div class="item">
-                   <a href="#!">
-                      <img src="img/backgroud.jpg" alt="projects">
-                   </a>
-                   <a href="#" class="btn-light">
-                      <i class="fas fa-eye"></i> Project
-                   </a>
-                   <a href="https://github.com/vikas6377297826/food-delivery-website" class="btn-dark">
-                      <i class="fab fa-github"></i> Github
-                   </a>
-               </div>
-               <div class="item">
-                   <a href="#!">
-                      <img src="img/project2.jpg" alt="projects">
-                   </a>
-                   <a href="#" class="btn-light">
-                      <i class="fas fa-eye"></i> Project
-                   </a>
-                   <a href="https://github.com/vikas6377297826/gym-website" class="btn-dark">
-                      <i class="fab fa-github"></i> Github
-                   </a>
-               </div>
-               <div class="item">
-                   <a href="#!">
-                      <img src="img/project3.jpg" alt="projects">
-                   </a>
-                   <a href="#" class="btn-light">
-                      <i class="fas fa-eye"></i> Project
-                   </a>
-                   <a href="https://github.com/vikas6377297826/Dancewebsite" class="btn-dark">
-                      <i class="fab fa-github"></i> Github
-                   </a>
-               </div>
-               <div class="item">
-                   <a href="#!">
-                      <img src="img/project4.jpg" alt="projects">
-                   </a>
-                   <a href="#" class="btn-light">
-                      <i class="fas fa-eye"></i> Project
-                   </a>
-                   <a href="https://github.com/vikas6377297826/add-to-cart" class="btn-dark">
-                      <i class="fab fa-github"></i> Github
-                   </a>
-               </div>
-               <div class="item">
-                   <a href="#!">
-                      <img src="img/project5.jpg" alt="projects">
-                   </a>
-                   <a href="#" class="btn-light">
-                      <i class="fas fa-eye"></i> Project
-                   </a>
-                   <a href="https://github.com/vikas6377297826/ecommerce-website-4" class="btn-dark">
-                      <i class="fab fa-github"></i> Github
-                   </a>
-               </div>
-           </div>
-       </main>
-
-       <footer id="main-footer">
-           Copyright &copy; 2021
-       </footer>
-       <script src="js/main.js"></script>
-    </body>
+    <main class="main-content">
+        <div class="container">
+            <div class="work-section">
+                <h1>My Work</h1>
+                <p class="section-subtitle">Check out some of my projects...</p>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <img src="img/backgroud.jpg" alt="Project 1">
+                        <div class="project-links">
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="https://github.com/vikas6377297826/food-delivery-website" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/project2.jpg" alt="Project 2">
+                        <div class="project-links">
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="https://github.com/vikas6377297826/gym-website" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/project3.jpg" alt="Project 3">
+                        <div class="project-links">
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="https://github.com/vikas6377297826/Dancewebsite" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/project4.jpg" alt="Project 4">
+                        <div class="project-links">
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="https://github.com/vikas6377297826/add-to-cart" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/project5.jpg" alt="Project 5">
+                        <div class="project-links">
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-eye"></i> View Project
+                            </a>
+                            <a href="https://github.com/vikas6377297826/ecommerce-website-4" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
 </html>

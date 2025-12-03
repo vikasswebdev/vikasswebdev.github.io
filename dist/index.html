@@ -1,56 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Welcome To my Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/main.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikas Patel</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav-container">
+          <a href="#home" class="nav-link active">me</a>
+          <a href="#about" class="nav-link">about</a>
+          <a href="#work" class="nav-link">work</a>
+        </div>
+      </nav>
+    </header>
 
-    </head>
-    <body id="bg-img">
-       <header>
-           <div class="menu-btn">
-               <div class="btn-line"></div>
-               <div class="btn-line"></div>
-               <div class="btn-line"></div>
-           </div>
-           <nav class="menu">
-               <div class="menu-branding">
-                   <div class="portrait">
-                   </div>
-               </div>
-               <ul class="menu-nav">
-                   <li class="nav-item current">
-                     <a href="index.html" class="nav-link">Home</a>
-                   </li>
-                    <li class="nav-item">
-                     <a href="about.html" class="nav-link">About me</a>
-                   </li>
-                    <li class="nav-item">
-                     <a href="work.html" class="nav-link">mywork</a>
-                   </li>
-                    <li class="nav-item">
-                     <a href="contect.html" class="nav-link">How to reach me</a>
-                   </li>
-               </ul>
-           </nav>
-       </header>
-       <main id="home">
-           <h1 class="lg-heading">Vikas <span class="text-secondary"> Patel</span></h1>
-           <h2 class="sm-heading">
-               Web Developer, Graphic Designer & Entreprenur 
-           </h2>
-            <div class="icons">
-                <a href="https://twitter.com/VikasPa77049498?s=09"><i class="fab fa-twitter fa-2x"></i></a>    
-                <a href="https://www.facebook.com/vikaswebdesigner"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/vikas-patel-a89011214"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://github.com/vikas6377297826"><i class="fab fa-github fa-2x"></i></a>
+    <main class="main-content">
+      <!-- Home/Intro Section -->
+      <section id="home" class="section">
+        <div class="container">
+          <div class="intro">
+            <div class="intro-left">
+              <img
+                src="img/portrait.jpg"
+                alt="Vikas Patel"
+                class="profile-img"
+              />
+              <div class="social-links">
+                <a
+                  href="https://x.com/vikaas_ai"
+                  target="_blank"
+                  aria-label="Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/techbyvikass/"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/vikaswebdev/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/vikasswebdev"
+                  target="_blank"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
-       </main>
-       <footer id="main-footer">
-           Copyright &copy; 2022
-       </footer>
-       <script src="js/main.js"></script>
-    </body>
+            <div class="intro-right">
+              <h1 class="name">
+                <span class="name-first">Vikas</span>
+                <span class="name-last">Patel</span>
+              </h1>
+              <p class="tagline">Full Stack Engineer & AI Entusiast</p>
+              <p class="affiliation">
+                I love exploring how AI can help solve real-world problems, and
+                nowdays I am deep diving into AI.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="content-section">
+            <p class="three-words">
+              <strong>In three words:</strong> I love to learn and build!
+            </p>
+
+            <p class="main-text">
+              I am a web & app developer passionate about creating beautiful and
+              functional digital experiences.
+            </p>
+
+            <div class="education-section">
+              <h3 class="section-heading">Education & Learning</h3>
+              <div class="highlight-box">
+                <ul>
+                  <li>
+                    I have completed Bachelor's degree (BSC) from University
+                    College Of Science, MLSU
+                  </li>
+                  <li>
+                    Self-taught full stack developer - learned from YouTube and
+                    online resources
+                  </li>
+                  <li>Currently learning Python and AI-related technologies</li>
+                  <li>
+                    Experienced in full-stack development with React, Node.js,
+                    TypeScript, and modern frameworks
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- <div class="research-section">
+              <h2 class="section-heading">Web Development & Design</h2>
+              <p class="section-question">
+                How can I create websites that are both beautiful and
+                functional?
+              </p>
+              <div class="highlight-box">
+                <ul>
+                  <li>
+                    I develop responsive websites using modern technologies like
+                    HTML, CSS, JavaScript, and various frameworks.
+                  </li>
+                  <li>
+                    I focus on creating user-friendly interfaces with clean
+                    design principles and best practices.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="research-section">
+              <h2 class="section-heading">Learning & Growth</h2>
+              <p class="section-question">
+                How can I continue to improve my skills and stay updated with
+                the latest technologies?
+              </p>
+              <div class="highlight-box">
+                <ul>
+                  <li>
+                    I actively learn from online resources, tutorials, and
+                    practice by building real-world projects.
+                  </li>
+                  <li>
+                    I believe in continuous learning and adapting to new
+                    technologies and design trends.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="quotes-section">
+              <h2 class="section-heading">Inspirational Quotes</h2>
+              <div class="highlight-box">
+                <ul>
+                  <li>
+                    <strong>Quote 1:</strong> "Never bend your head. Hold it
+                    high. Look the world straight in the eye." —
+                    <em>Helen Keller</em>
+                  </li>
+                  <li>
+                    <strong>Quote 2:</strong> "The true sign of intelligence is
+                    not knowledge but imagination." — <em>Albert Einstein</em>
+                  </li>
+                  <li>
+                    <strong>Quote 3:</strong> "If you are searching for that
+                    person who will change your life, take a look in the
+                    mirror." — <em>Sandeep Maheshwari</em>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Section -->
+      <section id="work" class="section">
+        <div class="container">
+          <div class="content-section">
+            <h1 class="section-heading">My Work</h1>
+
+            <!-- Experience Section -->
+            <div class="experience-section">
+              <h2
+                class="section-heading"
+                style="font-size: 1.5rem; margin-top: 2rem"
+              >
+                Experience
+              </h2>
+              <div class="experience-list">
+                <div class="experience-item">
+                  <div class="experience-header">
+                    <h3>Software Developer</h3>
+                    <span class="experience-company"
+                      >ContractFlo Technologies</span
+                    >
+                    <span class="experience-period"
+                      >Aug 2023 - Present · 2 yrs 5 mos</span
+                    >
+                  </div>
+                  <p class="experience-type">Full-time · Remote</p>
+                  <p class="experience-skills">Node.js, TypeScript</p>
+                </div>
+
+                <div class="experience-item">
+                  <div class="experience-header">
+                    <h3>Full Stack Engineer</h3>
+                    <span class="experience-company">codeoflyf</span>
+                    <span class="experience-period"
+                      >Jul 2023 - Present · 2 yrs 6 mos</span
+                    >
+                  </div>
+                  <p class="experience-type">
+                    Self-employed · Udaipur, Rajasthan, India · On-site
+                  </p>
+                  <p class="experience-skills">
+                    React.js & React Native · Node.js, Express.js
+                  </p>
+                </div>
+
+                <div class="experience-item">
+                  <div class="experience-header">
+                    <h3>React Developer</h3>
+                    <span class="experience-company">NextEdge Digital</span>
+                    <span class="experience-period"
+                      >Jul 2021 - Jul 2023 · 2 yrs 1 mo</span
+                    >
+                  </div>
+                  <p class="experience-type">Full-time</p>
+                  <p class="experience-skills">Tailwind CSS, Node.js</p>
+                </div>
+
+                <div class="experience-item">
+                  <div class="experience-header">
+                    <h3>React Developer</h3>
+                    <span class="experience-company">Freelance</span>
+                    <span class="experience-period"
+                      >Feb 2023 - Mar 2023 · 2 mos</span
+                    >
+                  </div>
+                  <p class="experience-type">
+                    Freelance · Ahmedabad, Gujarat, India · Remote
+                  </p>
+                  <p class="experience-skills">TypeScript, React.js</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="projects-section">
+              <h2
+                class="section-heading"
+                style="font-size: 1.5rem; margin-top: 3rem"
+              >
+                Projects
+              </h2>
+              <div class="projects-list">
+                <div class="project-item">
+                  <div class="project-info">
+                    <h3>MyVCCircle</h3>
+                    <p>
+                      An all-in-one personal finance companion app that helps
+                      you track group savings, manage expenses, and grow smarter
+                      with money. Features include Savings Circles, Expense
+                      Tracker, Rent Pay Assistant, Goal Planner, and AI-powered
+                      Finance Coach.
+                    </p>
+                    <div class="project-links">
+                      <a
+                        href="https://myvccircle.com"
+                        target="_blank"
+                        class="project-link"
+                        >Visit Website</a
+                      >
+                      <a
+                        href="https://www.producthunt.com/posts/myvccircle"
+                        target="_blank"
+                        class="project-link"
+                        >Product Hunt</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

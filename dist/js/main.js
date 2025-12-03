@@ -1,36 +1,54 @@
-// Select DOM Items
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
-const menuNav = document.querySelector('.menu-nav');
-const menuBranding = document.querySelector('.menu-branding');
-const navItems = document.querySelectorAll('.nav-item');
+// Smooth scroll for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+        if (target) {
+            const headerOffset = 80;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-// Set Initial State of Menu
-let showMenu =  false;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
 
-menuBtn.addEventListener('click', toggleMenu);
+            // Update active nav link
+            updateActiveNav(targetId);
+        }
+    });
+});
 
-function toggleMenu(){
-    if (!showMenu) {
-       menuBtn.classList.add('close');             
-       menu.classList.add('show');             
-       menuNav.classList.add('show');             
-       menuBranding.classList.add('show');             
-       navItems.forEach(item => item.classList.add('show'));
-
-       // Set Menu State
-       showMenu = true;
-    }else{
-        menuBtn.classList.remove('close');             
-       menu.classList.remove('show');             
-       menuNav.classList.remove('show');             
-       menuBranding.classList.remove('show');             
-       navItems.forEach(item => item.classList.remove('show'));
-
-       // Set Menu State
-       showMenu = false;
-    }
+// Update active navigation link based on scroll position
+function updateActiveNav(hash) {
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === hash) {
+            link.classList.add('active');
+        }
+    });
 }
 
+// Update active nav on scroll
+let sections = document.querySelectorAll('.section');
+let navLinks = document.querySelectorAll('.nav-link');
 
+window.addEventListener('scroll', () => {
+    let current = '';
+    const headerOffset = 100;
 
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop <= headerOffset) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+});
