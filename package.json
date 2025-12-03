@@ -4,11 +4,15 @@
   "description": "Rsponsive portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch scss:dist/css"
+    "sass": "sass --watch scss:dist/css",
+    "deploy": "gh-pages -d dist"
   },
   "author": "vikas patel",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.94.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
