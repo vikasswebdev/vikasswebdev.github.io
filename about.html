@@ -1,91 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>About Me</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/main.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Vikas Patel</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="nav-link">me</a>
+                <a href="about.html" class="nav-link active">about</a>
+                <a href="work.html" class="nav-link">work</a>
+                <a href="contect.html" class="nav-link">contact</a>
+            </div>
+        </nav>
+    </header>
 
-    </head>
-    <body>
-       <header>
-           <div class="menu-btn">
-               <div class="btn-line"></div>
-               <div class="btn-line"></div>
-               <div class="btn-line"></div>
-           </div>
-           <nav class="menu">
-               <div class="menu-branding">
-                   <div class="portrait">
-                   </div>
-               </div>
-               <ul class="menu-nav">
-                   <li class="nav-item">
-                     <a href="index.html" class="nav-link">Home</a>
-                   </li>
-                    <li class="nav-item current">
-                     <a href="about.html" class="nav-link">About me</a>
-                   </li>
-                    <li class="nav-item">
-                     <a href="work.html" class="nav-link">mywork</a>
-                   </li>
-                    <li class="nav-item">
-                     <a href="contect.html" class="nav-link">How to reach me</a>
-                   </li>
-               </ul>
-           </nav>
-       </header>
-       <main id="about">
-           <h1 class="lg-heading">About <span class="text-secondary"> Me</span></h1>
-           <h2 class="sm-heading">
-               Let me tell you a few things...
-           </h2>
-           <div class="about-info">
-               <img src="img/portrait.jpg" alt="viaks patel" class="bio-image">
-               <div class="bio">
-                   <h3 class="text-secondary">BIO</h3>
-                   <p>Hi, I am vikas patel, I am persuing BSC form University Collage Of Science.
-                      I have learnt Web Development from YouTube and Internet, i think a lot of things available 
-                      on Internet.
-                      
-                   </p>
-               </div>
-
-               <div class="job job-1">
-                   <h3>Quotes 1</h3>
-                   <h6>- Helen Keller</h6>
-                   <p>  "Never bend your head.
-                             Hold it high.
-                            Look the world
-                            straight in the eye."
-                    </p>
-               </div>
-               <div class="job job-2">
-                   <h3>Quotes 2</h3>
-                   <h6>-Albert Einstein</h6>
-                   <p>    "The true sign of intelligence
-                            is not Knowledage but
-                                imagination."
-                      </p>
-               </div>
-               <div class="job job-3">
-                   <h3>Quotes 3</h3>
-                   <h6>-Sandeep Maheshwari</h6>
-                   <p>
-                       "If you are searching for that
-                        person who will change your life,
-                        take a look in the mirror."
-                   </p>
-               </div>
-
-
-           </div>
-       </main>
-
-       <footer id="main-footer">
-           Copyright &copy; 2021
-       </footer>
-       <script src="js/main.js"></script>
-    </body>
+    <main class="main-content">
+        <div class="container">
+            <div class="about-section">
+                <div class="about-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="about-content">
+                    <div class="bio-section">
+                        <img src="img/portrait.jpg" alt="Vikas Patel" class="profile-img">
+                        <div class="bio-text">
+                            <h2>Bio</h2>
+                            <p>Hi, I am Vikas Patel. I am pursuing BSC from University College Of Science. I have learnt Web Development from YouTube and Internet. I think a lot of things are available on the Internet.</p>
+                        </div>
+                    </div>
+                    <div class="quotes-section">
+                        <div class="quote-card">
+                            <h3>Quote 1</h3>
+                            <p class="quote-text">"Never bend your head. Hold it high. Look the world straight in the eye."</p>
+                            <p class="quote-author">— Helen Keller</p>
+                        </div>
+                        <div class="quote-card">
+                            <h3>Quote 2</h3>
+                            <p class="quote-text">"The true sign of intelligence is not knowledge but imagination."</p>
+                            <p class="quote-author">— Albert Einstein</p>
+                        </div>
+                        <div class="quote-card">
+                            <h3>Quote 3</h3>
+                            <p class="quote-text">"If you are searching for that person who will change your life, take a look in the mirror."</p>
+                            <p class="quote-author">— Sandeep Maheshwari</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
