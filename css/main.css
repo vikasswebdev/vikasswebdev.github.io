@@ -280,6 +280,15 @@ header {
     font-weight: 500;
 }
 
+a.experience-company {
+    text-decoration: none;
+}
+
+a.experience-company:hover {
+    text-decoration: underline;
+    color: #0052a3;
+}
+
 .experience-period {
     font-size: 0.95rem;
     color: #666;
@@ -325,6 +334,17 @@ header {
     font-weight: 600;
     color: #000;
     margin-bottom: 0.5rem;
+}
+
+.project-info h3 a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-info h3 a:hover {
+    color: #0052a3;
+    text-decoration: underline;
 }
 
 .project-info p {
